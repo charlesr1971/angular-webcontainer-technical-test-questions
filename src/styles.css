@@ -246,6 +246,10 @@ nav a {
   cursor: pointer;
 }
 
+.time-separator-text {
+  margin: 0px 10px;
+}
+
 /* webflow form elements */
 
 @keyframes gradient {
