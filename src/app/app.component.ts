@@ -259,6 +259,16 @@ import { DemoService } from './services/demo.service';
           <app-example20></app-example20>
         </div>
       </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 29</div>
+          <div class="sub-header">Example21Component</div>
+          <div class="file-header">example21.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example21></app-example21>
+        </div>
+      </app-accordion-item>
     <app-accordion>
   `,
   styles: [
