@@ -35,6 +35,7 @@ import { Example17bComponent } from './example17/example17b.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Example18Component } from './example18/example18.component';
 import { Example19Component } from './example19/example19.component';
+import { Example20Component } from './example20/example20.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { Example19Component } from './example19/example19.component';
     Example17bComponent,
     Example18Component,
     Example19Component,
+    Example20Component,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   exports: [ReactiveFormsModule],

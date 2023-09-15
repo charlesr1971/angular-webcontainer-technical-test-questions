@@ -70,7 +70,7 @@ h1 {
 }
 
 .header-conflict::after {
-  color:var(--header-indicator-background);
+  color: var(--header-indicator-background);
 }
 
 .sub-header {
@@ -215,6 +215,10 @@ div.item-header-1 {
   border-radius: 5px;
   color: var(--item-content-color);
   background: var(--item-content-background);
+}
+
+.item-content ol {
+  margin: 20px 0px;
 }
 
 .item-text {
