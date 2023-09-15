@@ -6,12 +6,6 @@ import {
   Renderer2,
 } from '@angular/core';
 import { fromEvent, merge, of, Observable, timer, Subject, NEVER } from 'rxjs';
-
-interface CounterStateModel {
-  count: number;
-  isTicking: boolean;
-}
-
 import {
   switchMap,
   scan,
@@ -23,6 +17,11 @@ import {
   map,
   withLatestFrom,
 } from 'rxjs/operators';
+
+interface CounterStateModel {
+  count: number;
+  isTicking: boolean;
+}
 
 @Component({
   selector: 'app-example7',
