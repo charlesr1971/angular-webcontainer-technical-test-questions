@@ -1,0 +1,320 @@
+/* You can add global styles to this file, and also import other style files */
+/* html {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+} */
+
+:root {
+  --main-txt-color: rgba(0, 0, 0, 1);
+  --main-btn-color: rgba(0, 0, 0, 0.5);
+  --box-strong-color: rgba(0, 0, 0, 0.75);
+  --box-em-color: rgba(0, 0, 0, 0.5);
+  --header-color: rgba(255, 255, 255, 0.5);
+  --sub-header-color: rgba(255, 255, 255, 0.125);
+  --file-color: rgba(255, 255, 255, 0.075);
+  --item-header-color: rgba(255, 255, 255, 1);
+  --item-header-warning-color: rgba(255, 0, 0, 1);
+  --item-content-color: rgba(0, 0, 0, 1);
+  --breakpoint-large-screen: 960px;
+  --item-implementation-background: rgba(255, 228, 196, 0.075);
+  --header-indicator-background: rgba(255, 0, 0, 1);
+  --item-content-background: rgba(255, 228, 196, 1);
+  --item-content-border: var(--item-content-background);
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  background-image: radial-gradient(
+    circle at 0% 0%,
+    #373b52,
+    #252736 51%,
+    #1d1e26
+  );
+  color: rgba(255, 255, 255, 1);
+}
+
+.divider {
+  height: 20px;
+}
+
+h1 {
+  margin: 30px 15px 40px 15px;
+}
+
+.header {
+  font-size: 32px;
+  color: var(--header-color);
+  font-weight: bold;
+  /* margin: 20px 0px; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header::after {
+  content: '▶';
+  margin-left: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.header-conflict::after {
+  color:var(--header-indicator-background);
+}
+
+.sub-header {
+  font-size: 2rem;
+  color: var(--sub-header-color);
+  font-weight: bold;
+  margin: 0px 0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.file-header {
+  font-size: 1.8rem;
+  color: var(--file-color);
+  font-weight: normal;
+  margin: 20px 0px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  padding: 12px 16px;
+  margin: 10px 10px 10px 0px;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--main-btn-color);
+  border: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+div.box-no-size {
+  background-color: orange;
+  border: 1px solid black;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--main-txt-color);
+  max-width: 600px;
+}
+
+div.box-no-size strong {
+  display: block;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--box-strong-color);
+  margin-bottom: 10px;
+}
+
+div.box-no-size em {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--box-em-color);
+}
+
+div.box-size-with-pointer {
+  position: relative;
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--main-txt-color);
+}
+
+div.box-button {
+  position: relative;
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--main-txt-color);
+  border-radius: 4px;
+}
+
+div.box-size-without-pointer {
+  position: relative;
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--main-txt-color);
+}
+
+.box-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--main-txt-color);
+}
+
+div.item-header-1 {
+  font-size: 1.8rem;
+  color: var(--item-header-color);
+  font-weight: bold;
+  margin: 0px 0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-header-2 {
+  font-size: 1.8rem;
+  color: var(--item-header-color);
+  font-weight: bold;
+  margin: 20px 0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-header-2-content {
+  padding: 15px;
+  border-radius: 5px;
+  background: var(--item-implementation-background);
+  border: 2px solid var(--item-content-border);
+}
+
+.item-header-3 {
+  font-size: 1.8rem;
+  color: var(--item-header-color);
+  font-weight: bold;
+  margin: 20px 0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-header-4 {
+  font-size: 1.8rem;
+  color: var(--item-header-color);
+  font-weight: bold;
+  margin: 20px 0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-header-5 {
+  font-size: 1.8rem;
+  color: var(--item-header-warning-color);
+  font-weight: bold;
+  margin: 20px 0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-content {
+  padding: 15px;
+  border-radius: 5px;
+  color: var(--item-content-color);
+  background: var(--item-content-background);
+}
+
+.item-text {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.question-image {
+  width: 100%;
+  max-width: 1000px;
+}
+
+@media (min-width: var(--breakpoint-large-screen)) {
+  .question-image {
+    max-width: 100%;
+  }
+}
+
+nav {
+  margin: 0px 0px 30px;
+}
+
+nav a {
+  display: block;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+/* webflow form elements */
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.webflow-style-input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 400px;
+  /* margin: 0 auto; */
+  border-radius: 2px;
+  padding: 1.4rem 2rem 1.6rem;
+  background: rgba(57, 63, 84, 0.8);
+}
+.webflow-style-input input {
+  border-style: none;
+  background: transparent;
+  outline: none;
+}
+.webflow-style-input button {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+}
+.webflow-style-input:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999;
+  height: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-position: 0% 0%;
+  background: linear-gradient(
+    to right,
+    #b294ff,
+    #57e6e6,
+    #feffb8,
+    #57e6e6,
+    #b294ff,
+    #57e6e6
+  );
+  background-size: 500% auto;
+  animation: gradient 3s linear infinite;
+}
+.webflow-style-input input {
+  flex-grow: 1;
+  color: #bfd2ff;
+  line-height: 2.4rem;
+  vertical-align: middle;
+  font-size: 1.8rem;
+}
+.webflow-style-input input::-webkit-input-placeholder {
+  color: #7881a1;
+}
+.webflow-style-input button {
+  color: #7881a1;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+  transition: color 0.25s;
+}
+.webflow-style-input button:hover {
+  color: #bfd2ff;
+}
