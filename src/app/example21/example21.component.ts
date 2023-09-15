@@ -116,12 +116,10 @@ export class Example21Component implements OnInit, OnDestroy {
             return EMPTY;
           } else if (control === 'RESET') {
             count = 0;
-            this.hours = 0;
-            this.minutes = 0;
-            this.seconds = 0;
             if (toggle) {
               return this.timer$;
             }
+            return of(count);
           }
           return EMPTY;
         })
