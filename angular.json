@@ -45,13 +45,8 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": [],
             "customWebpackConfig": {
               "path": "./angular.webpack.js"
@@ -92,11 +87,6 @@
         },
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
-          "options": {
-            "customWebpackConfigr": {
-              "path": "./angular.webpack.js"
-            }
-          },
           "configurations": {
             "production": {
               "browserTarget": "angular-webcontainer-template:build:production"
