@@ -4,18 +4,18 @@ import {
   OnInit,
   ElementRef,
   Injectable,
-} from '@angular/core';
-import { Title } from '@angular/platform-browser';
-import { Observable, Subject, EMPTY, combineLatest, of, from } from 'rxjs';
-import { takeUntil, map, catchError, concatMap } from 'rxjs/operators';
-import { DemoService } from './services/demo.service';
+} from "@angular/core";
+import { Title } from "@angular/platform-browser";
+import { Observable, Subject, EMPTY, combineLatest, of, from } from "rxjs";
+import { takeUntil, map, catchError, concatMap } from "rxjs/operators";
+import { DemoService } from "./services/demo.service";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   template: `
-  <h1>Angular Technical Test Questions</h1>
-  <app-accordion>
-    <app-accordion-item>
+    <h1>Angular Technical Test Questions</h1>
+    <app-accordion>
+      <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 3<span class="triangle"></span></div>
           <div class="sub-header">DemoComponent</div>
@@ -27,12 +27,29 @@ import { DemoService } from './services/demo.service';
       </app-accordion-item>
       <app-accordion-item>
         <div accordion-title>
-          <div class="header">QUESTION 4<span class="triangle"></span></div>
+          <div class="header">QUESTION 3<span class="triangle"></span></div>
           <div class="sub-header">AppComponent</div>
           <div class="file-header">app.component.ts</div>
         </div>
         <div accordion-content>
           <p>{{ user?.name }}</p>
+
+          <!--<div class="item-header-1">Question</div>
+          <img class="question-image" src="./assets/images/questions/q17.png" />
+          <div class="item-header-2">Implementation</div>-->
+          <div class="item-header-3">Answer</div>
+          <div class="item-content item-text">
+            <code> {{  "{{ user?.name }}" }} </code>
+          </div>
+          <div class="item-header-4">Notes</div>
+          <div class="item-content item-text">
+            Even though the <em>ngOnInit</em> method is executed after the class
+            variables are instantiated, the safe navigation operator should be
+            used, because change detection will try to update the user object
+            with <em>undefined</em>. Clearly, this will remove the
+            <em>name</em> property, which would then throw an error, unless the
+            safe navigation operator is used.
+          </div>
         </div>
       </app-accordion-item>
       <app-accordion-item>
@@ -42,7 +59,9 @@ import { DemoService } from './services/demo.service';
           <div class="file-header">app.component.ts</div>
         </div>
         <div accordion-content>
-          <p [ngClass]="{special: true}">{{birthday | date:'EEEE' | uppercase | lowercase}}</p>
+          <p [ngClass]="{ special: true }">
+            {{ birthday | date: "EEEE" | uppercase | lowercase }}
+          </p>
         </div>
       </app-accordion-item>
       <app-accordion-item>
@@ -187,7 +206,9 @@ import { DemoService } from './services/demo.service';
       </app-accordion-item>
       <app-accordion-item>
         <div accordion-title>
-          <div class="header header-conflict">QUESTION 22<span class="triangle"></span></div>
+          <div class="header header-conflict">
+            QUESTION 22<span class="triangle"></span>
+          </div>
           <div class="sub-header">Example10Component</div>
           <div class="file-header">example10.component.ts</div>
         </div>
@@ -217,14 +238,20 @@ import { DemoService } from './services/demo.service';
       </app-accordion-item>
       <app-accordion-item>
         <div accordion-title>
-          <div class="header header-conflict">QUESTION 25<span class="triangle"></span></div>
+          <div class="header header-conflict">
+            QUESTION 25<span class="triangle"></span>
+          </div>
           <div class="sub-header">Example17aComponent</div>
           <div class="file-header">example17a.component.ts</div>
         </div>
         <div accordion-content>
-          <nav> 
-            <a routerLink="/admin" class="nav" routerLinkActive="active">Admin</a>
-            <a routerLink="/users" class="nav" routerLinkActive="active">Users</a>
+          <nav>
+            <a routerLink="/admin" class="nav" routerLinkActive="active"
+              >Admin</a
+            >
+            <a routerLink="/users" class="nav" routerLinkActive="active"
+              >Users</a
+            >
           </nav>
           <router-outlet></router-outlet>
         </div>
@@ -269,23 +296,53 @@ import { DemoService } from './services/demo.service';
           <app-example21></app-example21>
         </div>
       </app-accordion-item>
-    <app-accordion>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 30<span class="triangle"></span></div>
+          <div class="sub-header">Example22Component</div>
+          <div class="file-header">example22.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example22></app-example22>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 31<span class="triangle"></span></div>
+          <div class="sub-header">Example23Component</div>
+          <div class="file-header">example23.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example23></app-example23>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 32<span class="triangle"></span></div>
+          <div class="sub-header">Example24Component</div>
+          <div class="file-header">example24.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example24></app-example24>
+        </div>
+      </app-accordion-item>
+    </app-accordion>
   `,
   styles: [
     `
-    p.special {
-      color: pink;
-    }
-  `,
+      p.special {
+        color: pink;
+      }
+    `,
   ],
 })
 export class AppComponent implements OnInit {
-  user: any = { name: 'Charlie' };
+  user: any = { name: "Charlie" };
   birthday = new Date(1988, 3, 15);
 
   constructor(private demoService: DemoService) {
-    console.log('AppComponent: constructor()');
-    this.demoService.demo2Service.name = 'root';
+    console.log("AppComponent: constructor()");
+    this.demoService.demo2Service.name = "root";
   }
 
   ngOnInit(): void {
