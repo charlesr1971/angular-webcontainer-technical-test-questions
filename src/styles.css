@@ -47,6 +47,10 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
+input {
+  -webkit-appearance: none;
+}
+
 .divider {
   height: 20px;
 }
@@ -63,14 +67,39 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.header::after {
+/*.header::after {
   content: '▶';
   margin-left: 20px;
   color: rgba(255, 255, 255, 1);
+  border: none;
+  -webkit-appearance: none;
+}*/
+
+/*.header::after {
+  width: 4px; 
+  height: 4px; 
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-left: 4px solid rgba(255, 255, 255, 1);
+}*/
+
+
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-right: 0;
+  border-left: 20px solid white;
+  margin-left: 10px
 }
 
-.header-conflict::after {
+/*.header-conflict::after {
   color: var(--header-indicator-background);
+}*/
+
+.header-conflict .triangle {
+  border-left: 20px solid var(--header-indicator-background);
 }
 
 .sub-header {
