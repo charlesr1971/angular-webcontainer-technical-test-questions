@@ -326,6 +326,36 @@ import { DemoService } from "./services/demo.service";
           <app-example24></app-example24>
         </div>
       </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 33<span class="triangle"></span></div>
+          <div class="sub-header">Example25Component</div>
+          <div class="file-header">example25.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example25></app-example25>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 34<span class="triangle"></span></div>
+          <div class="sub-header">Example26Component</div>
+          <div class="file-header">example26.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example26></app-example26>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 35<span class="triangle"></span></div>
+          <div class="sub-header">Example27Component</div>
+          <div class="file-header">example27.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example27></app-example27>
+        </div>
+      </app-accordion-item>
     </app-accordion>
   `,
   styles: [

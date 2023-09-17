@@ -40,6 +40,9 @@ import { Example21Component } from './example21/example21.component';
 import { Example22Component } from './example22/example22.component';
 import { Example23Component } from './example23/example23.component';
 import { Example24Component } from './example24/example24.component';
+import { Example25Component } from './example25/example25.component';
+import { Example26Component } from './example26/example26.component';
+import { Example27Component } from './example27/example27.component';
 
 @NgModule({
   declarations: [
@@ -79,6 +82,9 @@ import { Example24Component } from './example24/example24.component';
     Example22Component,
     Example23Component,
     Example24Component,
+    Example25Component,
+    Example26Component,
+    Example27Component,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   exports: [ReactiveFormsModule],

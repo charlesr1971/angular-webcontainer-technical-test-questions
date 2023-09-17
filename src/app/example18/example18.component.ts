@@ -5,7 +5,6 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <div class="item-header-1">Question</div>
     <img class="question-image" src="./assets/images/questions/qA1.png" />
-    <div class="item-header-2">Implementation</div>
     <div class="item-header-3">Answer</div>
     <div class="item-content item-text">NavigationEnds</div>
     <div class="item-header-4">Notes</div>
