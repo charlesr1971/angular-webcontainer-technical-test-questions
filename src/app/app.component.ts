@@ -593,6 +593,120 @@ import { DemoService } from "./services/demo.service";
           <app-example37></app-example37>
         </div>
       </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header header-conflict">
+            QUESTION 46<span class="triangle"></span>
+          </div>
+          <div class="question-header">
+            Which of the following <em>NgModules</em> needs to be imported in
+            order to use <em>Nglf</em> and <em>NgFor</em>?
+          </div>
+          <div class="sub-header">Example38Component</div>
+          <div class="file-header">example38.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example38></app-example38>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 47<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following list of decorators.<br />Which one can be
+            used to provide a unique instance of the <em>DemoService</em> in
+            every <em>NgModule</em>?
+          </div>
+          <div class="sub-header">Example39Component</div>
+          <div class="file-header">example39.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example39></app-example39>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 48<span class="triangle"></span></div>
+          <div class="question-header">
+            What method do you need to correctly implement the
+            <em>Pipe Transform</em> interface?
+          </div>
+          <div class="sub-header">Example40Component</div>
+          <div class="file-header">example40.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example40></app-example40>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 49<span class="triangle"></span></div>
+          <div class="question-header">
+            Given the code snippet below, what is the value that will be
+            displayed?
+          </div>
+          <div class="sub-header">Example41Component</div>
+          <div class="file-header">example41.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example41></app-example41>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 50<span class="triangle"></span></div>
+          <div class="question-header">
+            What is the <em>structural directive</em> that repeats a node for
+            each item in a list?
+          </div>
+          <div class="sub-header">Example42Component</div>
+          <div class="file-header">example42.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example42></app-example42>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 51<span class="triangle"></span></div>
+          <div class="question-header">
+            What is the type that can replace the underscore ( _ ) in the 5th
+            line of the code snippet below, so that the code is compiled
+            successfully?
+          </div>
+          <div class="sub-header">Example43Component</div>
+          <div class="file-header">example43.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example43></app-example43>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 52<span class="triangle"></span></div>
+          <div class="question-header">
+            Which of the following statements is correct?
+          </div>
+          <div class="sub-header">Example44Component</div>
+          <div class="file-header">example44.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example44></app-example44>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 53<span class="triangle"></span></div>
+          <div class="question-header">
+            A directive has the same set of lifecycle hooks as a component?
+          </div>
+          <div class="sub-header">Example45Component</div>
+          <div class="file-header">example45.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example45></app-example45>
+        </div>
+      </app-accordion-item>
     </app-accordion>
   `,
   styles: [
