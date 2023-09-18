@@ -25,7 +25,7 @@ interface Weather {
     <div class="item-header-2-content">
       <pre class="code-txt">
 <code [innerHTML]="code"></code>
-      </pre>
+</pre>
     </div>
     <div class="item-header-3">Answer</div>
     <div class="item-content item-text">Answer 1 || Answer 3</div>

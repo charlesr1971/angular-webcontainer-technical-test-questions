@@ -17,7 +17,9 @@ import { Component, OnInit } from "@angular/core";
           <i class="icon ion-android-arrow-forward"></i>
         </button>
       </div>-->
-      <pre class="code-txt"><code [innerHTML]="code"></code></pre>
+      <pre class="code-txt">
+<code [innerHTML]="code"></code>
+</pre><br />
       <div class="webflow-style-input">
         <input
           #Input2="ngModel"
