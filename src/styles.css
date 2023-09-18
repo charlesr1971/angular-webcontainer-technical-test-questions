@@ -10,12 +10,14 @@
   --box-strong-color: rgba(0, 0, 0, 0.75);
   --box-em-color: rgba(0, 0, 0, 0.5);
   --header-color: rgba(255, 255, 255, 0.5);
+  --question-header-color: rgba(255, 255, 255, 1);
   --sub-header-color: rgba(255, 255, 255, 0.125);
-  --file-color: rgba(255, 255, 255, 0.075);
+  --file-header-color: rgba(255, 255, 255, 0.075);
   --item-header-color: rgba(255, 255, 255, 1);
   --item-header-warning-color: rgba(255, 0, 0, 1);
   --item-content-color: rgba(0, 0, 0, 1);
   --breakpoint-large-screen: 960px;
+  --question-header-background: rgba(250, 128, 114, 1);
   --item-implementation-background: rgba(255, 228, 196, 0.075);
   --header-indicator-background: rgba(255, 0, 0, 1);
   --item-content-background: rgba(255, 228, 196, 1);
@@ -83,7 +85,6 @@ h1 {
   border-left: 4px solid rgba(255, 255, 255, 1);
 }*/
 
-
 .triangle {
   display: inline-block;
   width: 0;
@@ -91,7 +92,7 @@ h1 {
   border: 12px solid transparent;
   border-right: 0;
   border-left: 20px solid white;
-  margin-left: 10px
+  margin-left: 10px;
 }
 
 /*.header-conflict::after {
@@ -102,19 +103,31 @@ h1 {
   border-left: 20px solid var(--header-indicator-background);
 }
 
+.question-header {
+  font-size: 1.8rem;
+  color: var(--question-header-color);
+  font-weight: normal;
+  margin: 10px 0px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+  border-radius: 5px;
+  color: var(--item-content-color);
+  background: var(--question-header-background);
+}
+
 .sub-header {
   font-size: 2rem;
   color: var(--sub-header-color);
   font-weight: bold;
-  margin: 0px 0px 20px;
+  margin: 0px 0px 0px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .file-header {
   font-size: 1.8rem;
-  color: var(--file-color);
+  color: var(--file-header-color);
   font-weight: normal;
-  margin: 20px 0px 0px;
+  margin: 0px 0px 0px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -215,6 +228,17 @@ div.item-header-1 {
   border: 2px solid var(--item-content-border);
 }
 
+.code-txt {
+  padding: 15px;
+  border-radius: 5px;
+  background: var(--item-implementation-background);
+  white-space: pre-wrap;
+}
+
+.code-txt:first-child {
+  margin-top: 0px;
+}
+
 .item-header-3 {
   font-size: 1.8rem;
   color: var(--item-header-color);
@@ -251,7 +275,7 @@ div.item-header-1 {
 }
 
 .item-text {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .question-image {
@@ -313,7 +337,7 @@ nav a {
   outline: none;
 }
 .webflow-style-input:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0px;
   right: 0px;

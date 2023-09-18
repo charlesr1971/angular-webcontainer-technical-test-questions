@@ -97,6 +97,11 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 9<span class="triangle"></span></div>
+          <div class="question-header">
+            Given the code snippet below.<br />
+            What is the name of the <em>html element</em> that should replace
+            the question mark, from the <em>component template</em>?
+          </div>
           <div class="sub-header">Example2Component</div>
           <div class="file-header">example2.component.ts</div>
         </div>
@@ -117,6 +122,12 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 14<span class="triangle"></span></div>
+          <div class="question-header">
+            Considering the following use of <em>@Input()</em> and
+            <em>@Output</em> properties.<br />
+            What will be logged in the console, when the user clicks the
+            <em>SelectName</em> button?
+          </div>
           <div class="sub-header">Example4aComponent</div>
           <div class="file-header">example4a.component.ts</div>
         </div>
@@ -127,6 +138,10 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 15<span class="triangle"></span></div>
+          <div class="question-header">
+            Which of the following answers is a valid
+            <em>template expression</em>?
+          </div>
           <div class="sub-header">Example5Component</div>
           <div class="file-header">example5.component.ts</div>
         </div>
@@ -137,6 +152,10 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 16<span class="triangle"></span></div>
+          <div class="question-header">
+            Given the code snippet below, how will Angular compile the
+            <em>#Div1</em> and <em>#Div2</em> elements?
+          </div>
           <div class="sub-header">Example6Component</div>
           <div class="file-header">example6.component.ts</div>
         </div>
@@ -147,6 +166,10 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 17<span class="triangle"></span></div>
+          <div class="question-header">
+            In a <em>reactive form</em>, the source of truth is the
+            <em>component template</em>?
+          </div>
           <div class="sub-header">Example13Component</div>
           <div class="file-header">example13.component.ts</div>
         </div>
@@ -157,6 +180,10 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 18<span class="triangle"></span></div>
+          <div class="question-header">
+            <em>EventEmitters</em> should always be unsubscribed, before a
+            client component or service is destroyed?
+          </div>
           <div class="sub-header">Example14Component</div>
           <div class="file-header">example14.component.ts</div>
         </div>
@@ -177,6 +204,12 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 19<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following code snippet.<br />
+            What <em>pipe</em> can be used in place of the question mark, to
+            mark the component, to be checked for changes and update the view,
+            whenever the timer emits a new value?
+          </div>
           <div class="sub-header">Example12Component</div>
           <div class="file-header">example12.component.ts</div>
         </div>
@@ -194,7 +227,7 @@ import { DemoService } from "./services/demo.service";
           <app-example8a></app-example8a>
         </div>
       </app-accordion-item>
-      <app-accordion-item>
+      <!--<app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 21<span class="triangle"></span></div>
           <div class="sub-header">Example9aComponent</div>
@@ -203,11 +236,15 @@ import { DemoService } from "./services/demo.service";
         <div accordion-content>
           <app-example9a></app-example9a>
         </div>
-      </app-accordion-item>
+      </app-accordion-item>-->
       <app-accordion-item>
         <div accordion-title>
           <div class="header header-conflict">
             QUESTION 22<span class="triangle"></span>
+          </div>
+          <div class="question-header">
+            Which of the following answers is an invalid
+            <em>template</em> statement?
           </div>
           <div class="sub-header">Example10Component</div>
           <div class="file-header">example10.component.ts</div>
@@ -219,6 +256,11 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 23<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following route.<br />
+            Select the answer that represents the correct sending of the
+            required <em>id parameter</em>
+          </div>
           <div class="sub-header">Example15Component</div>
           <div class="file-header">example15.component.ts</div>
         </div>
@@ -229,6 +271,10 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 24<span class="triangle"></span></div>
+          <div class="question-header">
+            If a component is needed in more than one <em>NgModule</em>, it can
+            be added in the declarations array of all those modules?
+          </div>
           <div class="sub-header">Example16Component</div>
           <div class="file-header">example16.component.ts</div>
         </div>
@@ -238,8 +284,11 @@ import { DemoService } from "./services/demo.service";
       </app-accordion-item>
       <app-accordion-item>
         <div accordion-title>
-          <div class="header header-conflict">
-            QUESTION 25<span class="triangle"></span>
+          <div class="header">QUESTION 25<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following routes and html template.<br />
+            When the app is initially loaded, what <em>class</em> will be
+            assigned to the <em>admin anchor</em>?
           </div>
           <div class="sub-header">Example17aComponent</div>
           <div class="file-header">example17a.component.ts</div>
@@ -259,6 +308,10 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 26<span class="triangle"></span></div>
+          <div class="question-header">
+            What <em>router event</em> can be used to determine that a
+            navigation ended successfully?
+          </div>
           <div class="sub-header">Example18Component</div>
           <div class="file-header">example18.component.ts</div>
         </div>
@@ -269,6 +322,10 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 27<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following use of the <em>of</em> and
+            <em>map</em> operators. What is going to get logged in the console?
+          </div>
           <div class="sub-header">Example19Component</div>
           <div class="file-header">example19.component.ts</div>
         </div>
@@ -279,6 +336,10 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 28<span class="triangle"></span></div>
+          <div class="question-header">
+            The <em>AsyncPipe</em> can be used to subscribe to observables as
+            well as to promises?
+          </div>
           <div class="sub-header">Example20Component</div>
           <div class="file-header">example20.component.ts</div>
         </div>
@@ -289,6 +350,11 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 29<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following relationship between a component & service.
+            "Nothing will get logged, in the console, after the
+            <em>destroyed</em> string….”
+          </div>
           <div class="sub-header">Example21Component</div>
           <div class="file-header">example21.component.ts</div>
         </div>
@@ -299,6 +365,10 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 30<span class="triangle"></span></div>
+          <div class="question-header">
+            What is the <em>structural directive</em> that conditionally creates
+            or destroys subviews from the template?
+          </div>
           <div class="sub-header">Example22Component</div>
           <div class="file-header">example22.component.ts</div>
         </div>
@@ -309,6 +379,10 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 31<span class="triangle"></span></div>
+          <div class="question-header">
+            Before using the <em>ngModel</em> directive in two-way data binding,
+            a specific <em>NgModule</em> must be imported in the current module?
+          </div>
           <div class="sub-header">Example23Component</div>
           <div class="file-header">example23.component.ts</div>
         </div>
@@ -319,6 +393,11 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 32<span class="triangle"></span></div>
+          <div class="question-header">
+            Pipes can be used in any <em>@Service</em> or
+            <em>@Component</em> typescript code, since they are providers that
+            can be injected, in the constructor?
+          </div>
           <div class="sub-header">Example24Component</div>
           <div class="file-header">example24.component.ts</div>
         </div>
@@ -329,6 +408,12 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 33<span class="triangle"></span></div>
+          <div class="question-header">
+            Setting the <em>changeDetection</em> property of the
+            <em>@component</em> to
+            <em>ChangeDetectionStrategy.OnPush</em> affects all child components
+            of that tree?
+          </div>
           <div class="sub-header">Example25Component</div>
           <div class="file-header">example25.component.ts</div>
         </div>
@@ -339,6 +424,10 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 34<span class="triangle"></span></div>
+          <div class="question-header">
+            Given the following code snippet, what are the methods that will log
+            <em>undefined</em>?
+          </div>
           <div class="sub-header">Example26Component</div>
           <div class="file-header">example26.component.ts</div>
         </div>
@@ -349,11 +438,159 @@ import { DemoService } from "./services/demo.service";
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 35<span class="triangle"></span></div>
+          <div class="question-header">
+            What is the method name that needs to replace the question mark, so
+            that the <em>HttpInterceptor</em> request is handled correctly?
+          </div>
           <div class="sub-header">Example27Component</div>
           <div class="file-header">example27.component.ts</div>
         </div>
         <div accordion-content>
           <app-example27></app-example27>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 36<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following relationship between a component & service.
+            "Nothing will get logged, in the console, after the
+            <em>destroyed</em> string….”
+          </div>
+          <div class="sub-header">Example28aComponent</div>
+          <div class="file-header">example28a.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example28a></app-example28a>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 37<span class="triangle"></span></div>
+          <div class="question-header">
+            What <em>component lifecycle hook</em> is usually used, to detect an
+            <em>@Input</em> property changes?
+          </div>
+          <div class="sub-header">Example29Component</div>
+          <div class="file-header">example29.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example29></app-example29>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 38<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following definition of the <em>DemoModule</em>.<br />
+            What is the type of the <em>forRoot()</em> static method?
+          </div>
+          <div class="sub-header">Example30Component</div>
+          <div class="file-header">example30.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example30></app-example30>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 39<span class="triangle"></span></div>
+          <div class="question-header">
+            True or false: Given the service from the code snippet below, it is
+            required to register the service as a provider in a specific
+            <em>NgModule</em>, to make it available at the root level?
+          </div>
+          <div class="sub-header">Example31Component</div>
+          <div class="file-header">example31.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example31></app-example31>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 40<span class="triangle"></span></div>
+          <div class="question-header">
+            Which of the following is an incorrect syntax for adding the
+            <em>valid</em> CSS class to an html element?
+          </div>
+          <div class="sub-header">Example32Component</div>
+          <div class="file-header">example32.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example32></app-example32>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 41<span class="triangle"></span></div>
+          <div class="question-header">
+            Given the code snippet below.<br />
+            Select the <em>input</em> that will not be able to update the name
+            property?
+          </div>
+          <div class="sub-header">Example33Component</div>
+          <div class="file-header">example33.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example33></app-example33>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 42<span class="triangle"></span></div>
+          <div class="question-header">
+            What type of items can be used in the <em>NgModule</em> imports
+            array?
+          </div>
+          <div class="sub-header">Example34Component</div>
+          <div class="file-header">example34.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example34></app-example34>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 43<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following relationship between a <em>component</em> and
+            a <em>service</em>.<br />
+            What is the first word that is going to be logged in the console?
+          </div>
+          <div class="sub-header">Example35Component</div>
+          <div class="file-header">example35.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example35></app-example35>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 44<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following use of the <em>filter</em> and ·<em>map</em>
+            operators. What is going to get logged in the console?
+          </div>
+          <div class="sub-header">Example36Component</div>
+          <div class="file-header">example36.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example36></app-example36>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 45<span class="triangle"></span></div>
+          <div class="question-header">
+            Which of the following answers represents an invalid way of adding
+            headers to the options of an <em>HttpClient.get()</em> method?
+          </div>
+          <div class="sub-header">Example37Component</div>
+          <div class="file-header">example37.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example37></app-example37>
         </div>
       </app-accordion-item>
     </app-accordion>

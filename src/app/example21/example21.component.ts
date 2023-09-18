@@ -42,7 +42,7 @@ type StopwatchAction = 'START' | 'STOP' | 'RESET' | 'END';
     <div class="item-header-3">Answer</div>
     <div class="item-content item-text">True</div>
     <div class="item-header-4">Notes</div>
-    <div class="item-content item-text">Please look in the console, to see if the timer gets destroyed</div>
+    <div class="item-content item-text">Please look in the console, to see if the timer gets destroyed:  <a href="https://www.linkedin.com/pulse/how-unsubscribe-from-observables-angular-samuel-y-?utm_source=share&utm_medium=member_ios&utm_campaign=share_via" target="_blank">More information</a></div>
   `,
   styles: [],
 })
@@ -87,6 +87,7 @@ export class Example21Component implements OnInit, OnDestroy {
     ).pipe(mapTo('RESET'));
 
     this.createTimer(merge(start$, stop$, reset$)).subscribe((seconds) => {
+      console.log('Example21Component: ngOnInit(): timer subscribe');
       const secondsFieldVal = seconds % 60;
       const minutesFieldVal = Math.floor(seconds / 60) % 60;
       const hoursFieldVal = Math.floor(seconds / 3600);
