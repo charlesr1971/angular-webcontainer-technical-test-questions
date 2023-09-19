@@ -12,12 +12,12 @@ import { Component, OnInit } from '@angular/core';
           <app-example28b *ngIf='showChild'></app-example28b>
         </span>
       </h3>
-      <button (click)="update()">Update</button>
+      <button (click)="update()">Toggle Timer</button>
     </div>
     <div class="item-header-3">Answer</div>
     <div class="item-content item-text">True</div>
     <div class="item-header-4">Notes</div>
-    <div class="item-content item-text">Please look in the console, to see if the timer subscription gets destroyed. You should see <em>Example28bComponent: ngOnDestroy()</em> and nothing after this, which means the subscription stops immediately: <a href="https://www.linkedin.com/pulse/how-unsubscribe-from-observables-angular-samuel-y-?utm_source=share&utm_medium=member_ios&utm_campaign=share_via" target="_blank">More information</a></div>
+    <div class="item-content item-text">Please click on the <em>Toggle Timer</em> button, three times, to start/stop/start the timer, and then look in the console, to see if the timer subscription gets destroyed. You should see <em>Example28bComponent: ngOnDestroy()</em> and nothing after this, which means the subscription stops immediately: <a href="https://www.linkedin.com/pulse/how-unsubscribe-from-observables-angular-samuel-y-?utm_source=share&utm_medium=member_ios&utm_campaign=share_via" target="_blank">More information</a></div>
   `,
   styles: [
   ]

@@ -6,6 +6,7 @@ import {
   Injectable,
 } from "@angular/core";
 import { Title } from "@angular/platform-browser";
+import { RouterLink, Router, RouterOutlet } from "@angular/router";
 import { Observable, Subject, EMPTY, combineLatest, of, from } from "rxjs";
 import { takeUntil, map, catchError, concatMap } from "rxjs/operators";
 import { DemoService } from "./services/demo.service";
@@ -705,6 +706,90 @@ import { DemoService } from "./services/demo.service";
         </div>
         <div accordion-content>
           <app-example45></app-example45>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 54<span class="triangle"></span></div>
+          <div class="question-header">
+            What mode of <em>ViewEncapsulation</em> can be used to scope the CSS
+            to the component's view?
+          </div>
+          <div class="sub-header">Example46Component</div>
+          <div class="file-header">example46.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example46></app-example46>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 55<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following routes and html template.<br />
+            When the app is initially loaded, the <em>user</em> section anchor,
+            won't have the <em>active CSS class</em> assigned to it?
+          </div>
+          <div class="sub-header">Example47Component</div>
+          <div class="file-header">example47.component.ts</div>
+        </div>
+        <div accordion-content>
+          <nav>
+            <a routerLink="/users1" class="nav" routerLinkActive="active"
+              >Users</a
+            >
+            <a
+              routerLink="/users1/details"
+              class="nav"
+              routerLinkActive="active"
+              >Details</a
+            >
+          </nav>
+          <router-outlet></router-outlet>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 56<span class="triangle"></span></div>
+          <div class="question-header">
+            What is the <em>interface</em> that needs to be implemented in a
+            class in order to create an <em>http interceptor</em>?
+          </div>
+          <div class="sub-header">Example48Component</div>
+          <div class="file-header">example48.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example48></app-example48>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 57<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following relationship between a component and a
+            service.<br />
+            Nothing will get logged in the console after the
+            <em>destroyed</em> string?
+          </div>
+          <div class="sub-header">Example49aComponent</div>
+          <div class="file-header">example49a.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example49a></app-example49a>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 58<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following <em>NgModule</em>.<br />
+            Which <em>export</em> is an invalid way of sharing elements?
+          </div>
+          <div class="sub-header">Example50aComponent</div>
+          <div class="file-header">example50a.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example50a></app-example50a>
         </div>
       </app-accordion-item>
     </app-accordion>
