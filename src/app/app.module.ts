@@ -61,6 +61,15 @@ import { Example42Component } from './example42/example42.component';
 import { Example43Component } from './example43/example43.component';
 import { Example44Component } from './example44/example44.component';
 import { Example45Component } from './example45/example45.component';
+import { Example46Component } from './example46/example46.component';
+import { Example47Component } from './example47/example47.component';
+import { Example47aComponent } from './example47/example47a.component';
+import { Example47bComponent } from './example47/example47b.component';
+import { Example47Module } from './example47/example47.module';
+import { Example48Component } from './example48/example48.component';
+import { Example49bComponent } from './example49/example49b.component';
+import { Example49aComponent } from './example49/example49a.component';
+import { Example50aComponent } from './example50/example50a.component';
 
 @NgModule({
   declarations: [
@@ -122,6 +131,14 @@ import { Example45Component } from './example45/example45.component';
     Example43Component,
     Example44Component,
     Example45Component,
+    Example46Component,
+    Example47Component,
+    Example47aComponent,
+    Example47bComponent,
+    Example48Component,
+    Example49bComponent,
+    Example49aComponent,
+    Example50aComponent,
   ],
   imports: [
     BrowserModule,
@@ -130,6 +147,7 @@ import { Example45Component } from './example45/example45.component';
     AppRoutingModule,
     HttpClientModule,
     HttpClientJsonpModule,
+    Example47Module
   ],
   exports: [ReactiveFormsModule],
   providers: [],
