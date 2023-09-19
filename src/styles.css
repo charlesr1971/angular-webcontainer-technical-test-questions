@@ -50,6 +50,10 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
+.active {
+  color: red;
+}
+
 input {
   -webkit-appearance: none;
 }

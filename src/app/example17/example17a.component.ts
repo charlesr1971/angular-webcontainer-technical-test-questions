@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
     <div class="item-header-1">Question</div>
     <img class="question-image" src="./assets/images/questions/qA2.png" />
     <div class="item-header-3">Answer</div>
-    <div class="item-content item-text">nav CSS class</div>
+    <div class="item-content item-text">nav CSS class [Admin Section]</div>
     <div class="item-header-4">Notes</div>
     <div class="item-content item-text">
       The default route is to the <em>users</em> section. When the app is
