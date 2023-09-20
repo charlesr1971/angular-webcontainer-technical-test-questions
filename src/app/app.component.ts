@@ -792,6 +792,115 @@ import { DemoService } from "./services/demo.service";
           <app-example50a></app-example50a>
         </div>
       </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header header-conflict">
+            QUESTION 59<span class="triangle"></span>
+          </div>
+          <div class="question-header">
+            A <em>feature model</em> can have any of the following arrays:
+            declarations, imports, bootstrap, providers?
+          </div>
+          <div class="sub-header">Example51Component</div>
+          <div class="file-header">example51component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example51></app-example51>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 60<span class="triangle"></span></div>
+          <div class="question-header">
+            The <em>EventEmitter</em> class provided by Angular extends a core
+            <em>RxJS</em> class, adding an <em>emit()</em> method so it can send
+            arbitrary values.<br />
+            What is the name of that class?
+          </div>
+          <div class="sub-header">Example52Component</div>
+          <div class="file-header">example52component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example52></app-example52>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 61<span class="triangle"></span></div>
+          <div class="question-header">
+            Before using the <em>formControl</em> directive in a template, a
+            specific <em>NgModule</em> must be imported in the current
+            module.<br />
+            What's the name of that <em>NgModule</em>?
+          </div>
+          <div class="sub-header">Example53Component</div>
+          <div class="file-header">example53component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example53></app-example53>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 62<span class="triangle"></span></div>
+          <div class="question-header">
+            At the <em>component template</em> level, what brackets are used to
+            mark the data passing from a child component to its parent?
+          </div>
+          <div class="sub-header">Example54Component</div>
+          <div class="file-header">example54component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example54></app-example54>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header header-conflict">
+            QUESTION 63<span class="triangle"></span>
+          </div>
+          <div class="question-header">
+            Considering the following use of the
+            <em>@ViewChild</em> property.<br />
+            What will be logged in the console?
+          </div>
+          <div class="sub-header">Example55aComponent</div>
+          <div class="file-header">example55acomponent.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example55a></app-example55a>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 64<span class="triangle"></span></div>
+          <div class="question-header">
+            What should the type of the element, injected in the
+            <em>constructor</em>, be, so that the component has the color
+            correctly set to red?
+          </div>
+          <div class="sub-header">Example56Component</div>
+          <div class="file-header">example56component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example56></app-example56>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 65<span class="triangle"></span></div>
+          <div class="question-header">
+            Assume that the <em>custom-div</em> component has a property called
+            backgroundColor.<br />
+            What will the backgroundColor be in the following case?
+          </div>
+          <div class="sub-header">Example57aComponent</div>
+          <div class="file-header">example57acomponent.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example57a></app-example57a>
+        </div>
+      </app-accordion-item>
     </app-accordion>
   `,
   styles: [

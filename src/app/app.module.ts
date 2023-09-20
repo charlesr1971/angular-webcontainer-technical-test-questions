@@ -53,23 +53,32 @@ import { Example34Component } from "./example34/example34.component";
 import { Example35Component } from "./example35/example35.component";
 import { Example36Component } from "./example36/example36.component";
 import { Example37Component } from "./example37/example37.component";
-import { Example38Component } from './example38/example38.component';
-import { Example39Component } from './example39/example39.component';
-import { Example40Component } from './example40/example40.component';
-import { Example41Component } from './example41/example41.component';
-import { Example42Component } from './example42/example42.component';
-import { Example43Component } from './example43/example43.component';
-import { Example44Component } from './example44/example44.component';
-import { Example45Component } from './example45/example45.component';
-import { Example46Component } from './example46/example46.component';
-import { Example47Component } from './example47/example47.component';
-import { Example47aComponent } from './example47/example47a.component';
-import { Example47bComponent } from './example47/example47b.component';
-import { Example47Module } from './example47/example47.module';
-import { Example48Component } from './example48/example48.component';
-import { Example49bComponent } from './example49/example49b.component';
-import { Example49aComponent } from './example49/example49a.component';
-import { Example50aComponent } from './example50/example50a.component';
+import { Example38Component } from "./example38/example38.component";
+import { Example39Component } from "./example39/example39.component";
+import { Example40Component } from "./example40/example40.component";
+import { Example41Component } from "./example41/example41.component";
+import { Example42Component } from "./example42/example42.component";
+import { Example43Component } from "./example43/example43.component";
+import { Example44Component } from "./example44/example44.component";
+import { Example45Component } from "./example45/example45.component";
+import { Example46Component } from "./example46/example46.component";
+import { Example47Component } from "./example47/example47.component";
+import { Example47aComponent } from "./example47/example47a.component";
+import { Example47bComponent } from "./example47/example47b.component";
+import { Example47Module } from "./example47/example47.module";
+import { Example48Component } from "./example48/example48.component";
+import { Example49bComponent } from "./example49/example49b.component";
+import { Example49aComponent } from "./example49/example49a.component";
+import { Example50aComponent } from "./example50/example50a.component";
+import { Example51Component } from "./example51/example51.component";
+import { Example52Component } from "./example52/example52.component";
+import { Example53Component } from "./example53/example53.component";
+import { Example54Component } from "./example54/example54.component";
+import { Example55aComponent } from "./example55/example55a.component";
+import { Example55bComponent } from "./example55/example55b.component";
+import { Example56Component } from "./example56/example56.component";
+import { Example57aComponent } from './example57/example57a.component';
+import { Example57bComponent } from './example57/example57b.component';
 
 @NgModule({
   declarations: [
@@ -139,6 +148,15 @@ import { Example50aComponent } from './example50/example50a.component';
     Example49bComponent,
     Example49aComponent,
     Example50aComponent,
+    Example51Component,
+    Example52Component,
+    Example53Component,
+    Example54Component,
+    Example55aComponent,
+    Example55bComponent,
+    Example56Component,
+    Example57aComponent,
+    Example57bComponent,
   ],
   imports: [
     BrowserModule,
@@ -147,7 +165,7 @@ import { Example50aComponent } from './example50/example50a.component';
     AppRoutingModule,
     HttpClientModule,
     HttpClientJsonpModule,
-    Example47Module
+    Example47Module,
   ],
   exports: [ReactiveFormsModule],
   providers: [],
