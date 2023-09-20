@@ -16,7 +16,7 @@ import { DemoService } from "./services/demo.service";
   template: `
     <h1>Angular Technical Test Questions</h1>
     <app-accordion>
-      <app-accordion-item>
+      <!--<app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 3<span class="triangle"></span></div>
           <div class="sub-header">DemoComponent</div>
@@ -25,8 +25,8 @@ import { DemoService } from "./services/demo.service";
         <div accordion-content>
           <app-demo></app-demo>
         </div>
-      </app-accordion-item>
-      <app-accordion-item>
+      </app-accordion-item>-->
+      <!--<app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 3<span class="triangle"></span></div>
           <div class="sub-header">AppComponent</div>
@@ -34,10 +34,6 @@ import { DemoService } from "./services/demo.service";
         </div>
         <div accordion-content>
           <p>{{ user?.name }}</p>
-
-          <!--<div class="item-header-1">Question</div>
-          <img class="question-image" src="./assets/images/questions/q17.png" />
-          <div class="item-header-2">Implementation</div>-->
           <div class="item-header-3">Answer</div>
           <div class="item-content item-text">
             <code> {{  "{{ user?.name }}" }} </code>
@@ -52,8 +48,8 @@ import { DemoService } from "./services/demo.service";
             safe navigation operator is used.
           </div>
         </div>
-      </app-accordion-item>
-      <app-accordion-item>
+      </app-accordion-item>-->
+      <!--<app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 5<span class="triangle"></span></div>
           <div class="sub-header">AppComponent</div>
@@ -64,8 +60,8 @@ import { DemoService } from "./services/demo.service";
             {{ birthday | date: "EEEE" | uppercase | lowercase }}
           </p>
         </div>
-      </app-accordion-item>
-      <app-accordion-item>
+      </app-accordion-item>-->
+      <!--<app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 7<span class="triangle"></span></div>
           <div class="sub-header">Demo4Directive</div>
@@ -74,8 +70,8 @@ import { DemoService } from "./services/demo.service";
         <div accordion-content>
           <h2 appDemo4>Hello World</h2>
         </div>
-      </app-accordion-item>
-      <app-accordion-item>
+      </app-accordion-item>-->
+      <!--<app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 7<span class="triangle"></span></div>
           <div class="sub-header">Renderer2Component</div>
@@ -84,8 +80,8 @@ import { DemoService } from "./services/demo.service";
         <div accordion-content>
           <app-renderer2></app-renderer2>
         </div>
-      </app-accordion-item>
-      <app-accordion-item>
+      </app-accordion-item>-->
+      <!--<app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 7<span class="triangle"></span></div>
           <div class="sub-header">Example1Component</div>
@@ -94,7 +90,7 @@ import { DemoService } from "./services/demo.service";
         <div accordion-content>
           <app-example1></app-example1>
         </div>
-      </app-accordion-item>
+      </app-accordion-item>-->
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 9<span class="triangle"></span></div>
@@ -110,7 +106,7 @@ import { DemoService } from "./services/demo.service";
           <app-example2></app-example2>
         </div>
       </app-accordion-item>
-      <app-accordion-item>
+      <!--<app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 10<span class="triangle"></span></div>
           <div class="sub-header">Example3Component</div>
@@ -119,7 +115,7 @@ import { DemoService } from "./services/demo.service";
         <div accordion-content>
           <app-example3></app-example3>
         </div>
-      </app-accordion-item>
+      </app-accordion-item>-->
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 14<span class="triangle"></span></div>
@@ -192,7 +188,7 @@ import { DemoService } from "./services/demo.service";
           <app-example14></app-example14>
         </div>
       </app-accordion-item>
-      <app-accordion-item>
+      <!--<app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 19<span class="triangle"></span></div>
           <div class="sub-header">Example7Component</div>
@@ -201,7 +197,7 @@ import { DemoService } from "./services/demo.service";
         <div accordion-content>
           <app-example7></app-example7>
         </div>
-      </app-accordion-item>
+      </app-accordion-item>-->
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 19<span class="triangle"></span></div>
@@ -218,7 +214,7 @@ import { DemoService } from "./services/demo.service";
           <app-example12></app-example12>
         </div>
       </app-accordion-item>
-      <app-accordion-item>
+      <!--<app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 21<span class="triangle"></span></div>
           <div class="sub-header">Example8aComponent</div>
@@ -227,7 +223,7 @@ import { DemoService } from "./services/demo.service";
         <div accordion-content>
           <app-example8a></app-example8a>
         </div>
-      </app-accordion-item>
+      </app-accordion-item>-->
       <!--<app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 21<span class="triangle"></span></div>
@@ -899,6 +895,49 @@ import { DemoService } from "./services/demo.service";
         </div>
         <div accordion-content>
           <app-example57a></app-example57a>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 66<span class="triangle"></span></div>
+          <div class="question-header">
+            Which of the following statements are correct?
+          </div>
+          <div class="sub-header">Example58Component</div>
+          <div class="file-header">example58component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example58></app-example58>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 67<span class="triangle"></span></div>
+          <div class="question-header">
+            Given the code snippet below, complete the missing area marked with
+            the underscore, so that the following information is displayed:
+            <em>12/1 5/88</em>?
+          </div>
+          <div class="sub-header">Example59Component</div>
+          <div class="file-header">example59component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example59></app-example59>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 68<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following code snippet.<br />
+            After the user inputs a name, what will the border color of the
+            input be?
+          </div>
+          <div class="sub-header">Example60Component</div>
+          <div class="file-header">example60component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example60></app-example60>
         </div>
       </app-accordion-item>
     </app-accordion>

@@ -79,6 +79,9 @@ import { Example55bComponent } from "./example55/example55b.component";
 import { Example56Component } from "./example56/example56.component";
 import { Example57aComponent } from './example57/example57a.component';
 import { Example57bComponent } from './example57/example57b.component';
+import { Example58Component } from './example58/example58.component';
+import { Example59Component } from './example59/example59.component';
+import { Example60Component } from './example60/example60.component';
 
 @NgModule({
   declarations: [
@@ -157,6 +160,9 @@ import { Example57bComponent } from './example57/example57b.component';
     Example56Component,
     Example57aComponent,
     Example57bComponent,
+    Example58Component,
+    Example59Component,
+    Example60Component,
   ],
   imports: [
     BrowserModule,
