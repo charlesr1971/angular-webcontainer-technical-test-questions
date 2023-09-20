@@ -13,11 +13,12 @@ import { Component, OnInit } from "@angular/core";
     <div class="item-content item-text">Demo2</div>
     <div class="item-header-4">Notes</div>
     <div class="item-content item-text">
-      Check console for answer.<br />The <em>EventEmitter</em>, in the child
-      component, is responsible for pushing the data up to the parent component,
-      where it is consumed by the <em>select</em> method. The
-      <em>EventEmitter</em> only emits data, when the click event is triggered.
-      When the <em>name</em> variable is defined, during the parent component's
+      Check & search for <em>Example4aComponent</em> in the console, for
+      answer.<br />The <em>EventEmitter</em>, in the child component, is
+      responsible for pushing the data up to the parent component, where it is
+      consumed by the <em>select</em> method. The <em>EventEmitter</em> only
+      emits data, when the click event is triggered. When the
+      <em>name</em> variable is defined, during the parent component's
       initialisation, it is not consumed by the <em>select</em> method. This is
       why nothing is, initially, displayed in the console.
     </div>
@@ -28,6 +29,6 @@ export class Example4aComponent {
 
   nameSelected(name: string): void {
     this.name = name;
-    console.log(name);
+    console.log("Example4aComponent: nameSelected(): name: ", name);
   }
 }
