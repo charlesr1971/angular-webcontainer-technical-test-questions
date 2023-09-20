@@ -11,6 +11,7 @@ import { Component, Input, OnChanges, AfterViewInit } from "@angular/core";
     </div>
     <div class="item-header-4">Notes</div>
     <div class="item-content item-text">
+      Look for <em>Example26Component</em> in the console:
       <a href="https://angular.io/guide/lifecycle-hooks" target="_blank"
         >More Information</a
       >
