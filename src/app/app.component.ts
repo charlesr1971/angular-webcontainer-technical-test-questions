@@ -940,6 +940,53 @@ import { DemoService } from "./services/demo.service";
           <app-example60></app-example60>
         </div>
       </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 69<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following use of the <em>timer</em> and
+            <em>combinelatest</em> operators?<br />
+            What is going to get logged in the console the second time the
+            <em>combinelatest</em> operator emits a value?
+          </div>
+          <div class="sub-header">Example61Component</div>
+          <div class="file-header">example61component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example61></app-example61>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header header-conflict">
+            QUESTION 70<span class="triangle"></span>
+          </div>
+          <div class="question-header">
+            Which of the following statements about <em>observables</em> is
+            incorrect?
+          </div>
+          <div class="sub-header">Example62Component</div>
+          <div class="file-header">example62component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example62></app-example62>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 71<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following use of the
+            <em>distinctUntilChanged</em> operator.<br />
+            What is going to get logged in the console?
+          </div>
+          <div class="sub-header">Example63Component</div>
+          <div class="file-header">example63component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example63></app-example63>
+        </div>
+      </app-accordion-item>
     </app-accordion>
   `,
   styles: [
