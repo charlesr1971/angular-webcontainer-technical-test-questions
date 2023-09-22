@@ -63,9 +63,10 @@ export class Example64aComponent {
   @ViewChild("sub") sub: any;
 
   code = `
-    // PARENT COMPONENT
+    <strong class="template-strong">// PARENT COMPONENT</strong>
     @Component({
       selector: 'app-example64a',
+      <span class="template-highlight">changeDetection: ChangeDetectionStrategy.OnPush,</span>
       template: \`
       &#x3C;app-example64b [person1]=&#x22;person1&#x22; [person2]=&#x22;person2&#x22; #sub&#x3E;&#x3C;/app-example64b&#x3E;&#x3C;br /&#x3E;&#x3C;br /&#x3E;
       &#x3C;button (click)=&#x22;person1Click()&#x22;&#x3E;Change Person 1&#x3C;/button&#x3E;
@@ -85,10 +86,9 @@ export class Example64aComponent {
         this.person2.name = 'Jean';
       }
     }
-    // CHILD COMPONENT
+    <strong class="template-strong">// CHILD COMPONENT</strong>
     @Component({
       selector: 'app-example64b',
-      changeDetection: ChangeDetectionStrategy.OnPush,
       template: \`
         &#x3C;div&#x3E;
           &#x3C;p&#x3E;

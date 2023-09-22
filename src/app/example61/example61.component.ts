@@ -33,7 +33,7 @@ export class Example61Component implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.startTimer();
+    // this.startTimer();
   }
 
   startTimer() {
