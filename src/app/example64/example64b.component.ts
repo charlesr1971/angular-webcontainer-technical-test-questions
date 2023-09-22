@@ -10,8 +10,8 @@ interface Person {
 }
 
 @Component({
-  selector: 'app-example8b',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  selector: 'app-example64b',
+  // changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div>
       <p>
@@ -27,7 +27,8 @@ interface Person {
     </div>
   `,
 })
-export class Example8bComponent {
+export class Example64bComponent {
   @Input('person1') person1: Person;
   @Input('person2') person2: Person;
 }
+

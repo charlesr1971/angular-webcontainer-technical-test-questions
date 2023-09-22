@@ -214,16 +214,36 @@ import { DemoService } from "./services/demo.service";
           <app-example12></app-example12>
         </div>
       </app-accordion-item>
-      <!--<app-accordion-item>
+      <app-accordion-item>
         <div accordion-title>
-          <div class="header">QUESTION 21<span class="triangle"></span></div>
+          <div class="header header-conflict">QUESTION 21a<span class="triangle"></span></div>
+          <div class="question-header">
+            The parent component supplies two different objects to its child component.<br />
+            The child component uses <em>ChangeDetectionStrategy.OnPush</em>.<br />
+            Which object will trigger change detection to occur, in the child and why?
+          </div>
           <div class="sub-header">Example8aComponent</div>
           <div class="file-header">example8a.component.ts</div>
         </div>
         <div accordion-content>
           <app-example8a></app-example8a>
         </div>
-      </app-accordion-item>-->
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header header-conflict">QUESTION 21b<span class="triangle"></span></div>
+          <div class="question-header">
+            The parent component supplies two different objects to its child component.<br />
+            The parent component uses <em>ChangeDetectionStrategy.OnPush</em>.<br />
+            Which object will trigger change detection to occur, in the child and why?
+          </div>
+          <div class="sub-header">Example64aComponent</div>
+          <div class="file-header">example64a.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example64a></app-example64a>
+        </div>
+      </app-accordion-item>
       <!--<app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 21<span class="triangle"></span></div>
