@@ -55,7 +55,7 @@ export class Example8aComponent {
   @ViewChild('sub') sub: any;
 
   code = `
-    // PARENT COMPONENT
+    <strong class="template-strong">// PARENT COMPONENT</strong>
     @Component({
       selector: 'app-example8a',
       template: \`
@@ -77,10 +77,10 @@ export class Example8aComponent {
         this.person2.name = 'Jean';
       }
     }
-    // CHILD COMPONENT
+    <strong class="template-strong">// CHILD COMPONENT</strong>
     @Component({
       selector: 'app-example8b',
-      changeDetection: ChangeDetectionStrategy.OnPush,
+      <span class="template-highlight">changeDetection: ChangeDetectionStrategy.OnPush,</span>
       template: \`
         &#x3C;div&#x3E;
           &#x3C;p&#x3E;
@@ -106,11 +106,15 @@ export class Example8aComponent {
     this.person1 = { 
       name: 'alan' 
     }; // this does trigger the child component's ChangeDetectionStrategy.OnPush, because the object reference changes
-    console.log('Example8aComponent: this.sub.person1: ', this.sub.person1);
+    setTimeout( () => {
+      console.log('Example8aComponent: this.sub.person1: ', this.sub.person1);
+    });
   }
 
   person2Click() {
     this.person2.name = 'Jean'; // this does NOT trigger the child component's ChangeDetectionStrategy.OnPush, because the object reference has not changed
-    console.log('Example8aComponent: this.sub.person2: ', this.sub.person2);
+    setTimeout( () => {
+      console.log('Example8aComponent: this.sub.person2: ', this.sub.person2);
+    });
   }
 }
