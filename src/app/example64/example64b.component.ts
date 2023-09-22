@@ -16,12 +16,12 @@ interface Person {
     <div>
       <p>
         <strong>PERSON 1</strong>
-        <em>My parent component object reference does change:</em><br /><br />
+        <em>My parent component object reference does change:</em><span class="material-icons check_circle">check_circle</span><br /><br />
         {{ person1.name }}
       </p>
       <p>
         <strong>PERSON 2</strong>
-        <em>My parent component object reference does NOT change:</em><br /><br />
+        <em>My parent component object reference does change:</em><span class="material-icons check_circle">check_circle</span><br /><br />
         {{ person2.name }}
       </p>
     </div>
