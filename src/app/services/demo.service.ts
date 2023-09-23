@@ -6,7 +6,7 @@ import { timer } from 'rxjs';
   providedIn: 'root',
 })
 export class DemoService {
-  timer$ = timer(0, 1000);
+  // timer$ = timer(0, 1000);
 
   constructor(public demo2Service: Demo2Service) {
     console.log('DemoService: constructor()');

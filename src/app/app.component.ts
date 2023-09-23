@@ -1007,6 +1007,62 @@ import { DemoService } from "./services/demo.service";
           <app-example63></app-example63>
         </div>
       </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 72<span class="triangle"></span></div>
+          <div class="question-header">
+          Which of the following notifications is not sent by a handler that implements 
+the <em>Observer</em> interface?
+          </div>
+          <div class="sub-header">Example65Component</div>
+          <div class="file-header">example65component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example65></app-example65>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 73<span class="triangle"></span></div>
+          <div class="question-header">
+          Consider the following relationship between a component and a service.<br />
+What is the first word that is going to be logged in the console?
+          </div>
+          <div class="sub-header">Example66Component</div>
+          <div class="file-header">example66component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example66></app-example66>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 74<span class="triangle"></span></div>
+          <div class="question-header">
+          Given the code snippet below<br />
+Select the case that will be rendered by the <em>NgSwitch</em> statement?
+          </div>
+          <div class="sub-header">Example67Component</div>
+          <div class="file-header">example67component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example67></app-example67>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header header-conflict">QUESTION 75<span class="triangle"></span></div>
+          <div class="question-header">
+          What is the first <em>lifecycle hook</em> method that Angular calls, after a component is 
+constructed?
+          </div>
+          <div class="sub-header">Example68Component</div>
+          <div class="file-header">example68component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example68></app-example68>
+        </div>
+      </app-accordion-item>
     </app-accordion>
   `,
   styles: [
