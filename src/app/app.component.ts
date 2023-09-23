@@ -818,7 +818,7 @@ import { DemoService } from "./services/demo.service";
             declarations, imports, bootstrap, providers?
           </div>
           <div class="sub-header">Example51Component</div>
-          <div class="file-header">example51component.ts</div>
+          <div class="file-header">example51.component.ts</div>
         </div>
         <div accordion-content>
           <app-example51></app-example51>
@@ -834,7 +834,7 @@ import { DemoService } from "./services/demo.service";
             What is the name of that class?
           </div>
           <div class="sub-header">Example52Component</div>
-          <div class="file-header">example52component.ts</div>
+          <div class="file-header">example52.component.ts</div>
         </div>
         <div accordion-content>
           <app-example52></app-example52>
@@ -850,7 +850,7 @@ import { DemoService } from "./services/demo.service";
             What's the name of that <em>NgModule</em>?
           </div>
           <div class="sub-header">Example53Component</div>
-          <div class="file-header">example53component.ts</div>
+          <div class="file-header">example53.component.ts</div>
         </div>
         <div accordion-content>
           <app-example53></app-example53>
@@ -864,7 +864,7 @@ import { DemoService } from "./services/demo.service";
             mark the data passing from a child component to its parent?
           </div>
           <div class="sub-header">Example54Component</div>
-          <div class="file-header">example54component.ts</div>
+          <div class="file-header">example54.component.ts</div>
         </div>
         <div accordion-content>
           <app-example54></app-example54>
@@ -881,7 +881,7 @@ import { DemoService } from "./services/demo.service";
             What will be logged in the console?
           </div>
           <div class="sub-header">Example55aComponent</div>
-          <div class="file-header">example55acomponent.ts</div>
+          <div class="file-header">example55a.component.ts</div>
         </div>
         <div accordion-content>
           <app-example55a></app-example55a>
@@ -896,7 +896,7 @@ import { DemoService } from "./services/demo.service";
             correctly set to red?
           </div>
           <div class="sub-header">Example56Component</div>
-          <div class="file-header">example56component.ts</div>
+          <div class="file-header">example56.component.ts</div>
         </div>
         <div accordion-content>
           <app-example56></app-example56>
@@ -911,7 +911,7 @@ import { DemoService } from "./services/demo.service";
             What will the backgroundColor be in the following case?
           </div>
           <div class="sub-header">Example57aComponent</div>
-          <div class="file-header">example57acomponent.ts</div>
+          <div class="file-header">example57a.component.ts</div>
         </div>
         <div accordion-content>
           <app-example57a></app-example57a>
@@ -924,7 +924,7 @@ import { DemoService } from "./services/demo.service";
             Which of the following statements are correct?
           </div>
           <div class="sub-header">Example58Component</div>
-          <div class="file-header">example58component.ts</div>
+          <div class="file-header">example58.component.ts</div>
         </div>
         <div accordion-content>
           <app-example58></app-example58>
@@ -939,7 +939,7 @@ import { DemoService } from "./services/demo.service";
             <em>12/1 5/88</em>?
           </div>
           <div class="sub-header">Example59Component</div>
-          <div class="file-header">example59component.ts</div>
+          <div class="file-header">example59.component.ts</div>
         </div>
         <div accordion-content>
           <app-example59></app-example59>
@@ -954,7 +954,7 @@ import { DemoService } from "./services/demo.service";
             input be?
           </div>
           <div class="sub-header">Example60Component</div>
-          <div class="file-header">example60component.ts</div>
+          <div class="file-header">example60.component.ts</div>
         </div>
         <div accordion-content>
           <app-example60></app-example60>
@@ -970,7 +970,7 @@ import { DemoService } from "./services/demo.service";
             <em>combinelatest</em> operator emits a value?
           </div>
           <div class="sub-header">Example61Component</div>
-          <div class="file-header">example61component.ts</div>
+          <div class="file-header">example61.component.ts</div>
         </div>
         <div accordion-content>
           <app-example61></app-example61>
@@ -986,7 +986,7 @@ import { DemoService } from "./services/demo.service";
             incorrect?
           </div>
           <div class="sub-header">Example62Component</div>
-          <div class="file-header">example62component.ts</div>
+          <div class="file-header">example62.component.ts</div>
         </div>
         <div accordion-content>
           <app-example62></app-example62>
@@ -1001,7 +1001,7 @@ import { DemoService } from "./services/demo.service";
             What is going to get logged in the console?
           </div>
           <div class="sub-header">Example63Component</div>
-          <div class="file-header">example63component.ts</div>
+          <div class="file-header">example63.component.ts</div>
         </div>
         <div accordion-content>
           <app-example63></app-example63>
@@ -1015,7 +1015,11 @@ import { DemoService } from "./services/demo.service";
 the <em>Observer</em> interface?
           </div>
           <div class="sub-header">Example65Component</div>
+<<<<<<< HEAD
           <div class="file-header">example65component.ts</div>
+=======
+          <div class="file-header">example65.component.ts</div>
+>>>>>>> dc0f921746cccc4c6f283906390c42f75b534ae6
         </div>
         <div accordion-content>
           <app-example65></app-example65>
@@ -1029,7 +1033,11 @@ the <em>Observer</em> interface?
 What is the first word that is going to be logged in the console?
           </div>
           <div class="sub-header">Example66Component</div>
+<<<<<<< HEAD
           <div class="file-header">example66component.ts</div>
+=======
+          <div class="file-header">example66.component.ts</div>
+>>>>>>> dc0f921746cccc4c6f283906390c42f75b534ae6
         </div>
         <div accordion-content>
           <app-example66></app-example66>
@@ -1043,7 +1051,11 @@ What is the first word that is going to be logged in the console?
 Select the case that will be rendered by the <em>NgSwitch</em> statement?
           </div>
           <div class="sub-header">Example67Component</div>
+<<<<<<< HEAD
           <div class="file-header">example67component.ts</div>
+=======
+          <div class="file-header">example67.component.ts</div>
+>>>>>>> dc0f921746cccc4c6f283906390c42f75b534ae6
         </div>
         <div accordion-content>
           <app-example67></app-example67>
@@ -1057,12 +1069,73 @@ Select the case that will be rendered by the <em>NgSwitch</em> statement?
 constructed?
           </div>
           <div class="sub-header">Example68Component</div>
+<<<<<<< HEAD
           <div class="file-header">example68component.ts</div>
+=======
+          <div class="file-header">example68.component.ts</div>
+>>>>>>> dc0f921746cccc4c6f283906390c42f75b534ae6
         </div>
         <div accordion-content>
           <app-example68></app-example68>
         </div>
       </app-accordion-item>
+<<<<<<< HEAD
+=======
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 76<span class="triangle"></span></div>
+          <div class="question-header">
+            Given the following code snippet, how will Angular compile this component?
+          </div>
+          <div class="sub-header">Example69Component</div>
+          <div class="file-header">example69.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example69></app-example69>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 77<span class="triangle"></span></div>
+          <div class="question-header">
+            Which of the following definitions apply to a <em>singleton</em>?
+          </div>
+          <div class="sub-header">Example70Component</div>
+          <div class="file-header">example70.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example70></app-example70>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 78<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following relationship between two components and a service.<br />
+            What is going to be logged in the console? 
+          </div>
+          <div class="sub-header">Example71Component</div>
+          <div class="file-header">example71.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example71></app-example71>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 79<span class="triangle"></span></div>
+          <div class="question-header">
+            Consider the following use of the <em>filter</em> and <em>map</em> operators.<br />
+            What is going to get logged in the console? 
+          </div>
+          <div class="sub-header">Example72Component</div>
+          <div class="file-header">example72.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example72></app-example72>
+        </div>
+      </app-accordion-item>
+>>>>>>> dc0f921746cccc4c6f283906390c42f75b534ae6
     </app-accordion>
   `,
   styles: [
@@ -1080,6 +1153,7 @@ export class AppComponent implements OnInit {
   constructor(private demoService: DemoService) {
     console.log("AppComponent: constructor()");
     this.demoService.demo2Service.name = "root";
+    console.log("AppComponent: constructor(): this.demoService.demo2Service.name: ", this.demoService.demo2Service.name);
   }
 
   ngOnInit(): void {
