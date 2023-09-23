@@ -91,13 +91,10 @@ import { Example65Component } from './example65/example65.component';
 import { Example66Component } from './example66/example66.component';
 import { Example67Component } from './example67/example67.component';
 import { Example68Component } from './example68/example68.component';
-<<<<<<< HEAD
-=======
 import { Example69Component } from './example69/example69.component';
 import { Example70Component } from './example70/example70.component';
 import { Example71Component } from './example71/example71.component';
 import { Example72Component } from './example72/example72.component';
->>>>>>> dc0f921746cccc4c6f283906390c42f75b534ae6
 
 @NgModule({
   declarations: [
@@ -188,13 +185,10 @@ import { Example72Component } from './example72/example72.component';
     Example66Component,
     Example67Component,
     Example68Component,
-<<<<<<< HEAD
-=======
     Example69Component,
     Example70Component,
     Example71Component,
     Example72Component,
->>>>>>> dc0f921746cccc4c6f283906390c42f75b534ae6
   ],
   imports: [
     BrowserModule,

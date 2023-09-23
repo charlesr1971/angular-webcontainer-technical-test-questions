@@ -1015,11 +1015,8 @@ import { DemoService } from "./services/demo.service";
 the <em>Observer</em> interface?
           </div>
           <div class="sub-header">Example65Component</div>
-<<<<<<< HEAD
-          <div class="file-header">example65component.ts</div>
-=======
+
           <div class="file-header">example65.component.ts</div>
->>>>>>> dc0f921746cccc4c6f283906390c42f75b534ae6
         </div>
         <div accordion-content>
           <app-example65></app-example65>
@@ -1033,11 +1030,7 @@ the <em>Observer</em> interface?
 What is the first word that is going to be logged in the console?
           </div>
           <div class="sub-header">Example66Component</div>
-<<<<<<< HEAD
-          <div class="file-header">example66component.ts</div>
-=======
           <div class="file-header">example66.component.ts</div>
->>>>>>> dc0f921746cccc4c6f283906390c42f75b534ae6
         </div>
         <div accordion-content>
           <app-example66></app-example66>
@@ -1051,11 +1044,7 @@ What is the first word that is going to be logged in the console?
 Select the case that will be rendered by the <em>NgSwitch</em> statement?
           </div>
           <div class="sub-header">Example67Component</div>
-<<<<<<< HEAD
-          <div class="file-header">example67component.ts</div>
-=======
           <div class="file-header">example67.component.ts</div>
->>>>>>> dc0f921746cccc4c6f283906390c42f75b534ae6
         </div>
         <div accordion-content>
           <app-example67></app-example67>
@@ -1069,18 +1058,13 @@ Select the case that will be rendered by the <em>NgSwitch</em> statement?
 constructed?
           </div>
           <div class="sub-header">Example68Component</div>
-<<<<<<< HEAD
           <div class="file-header">example68component.ts</div>
-=======
           <div class="file-header">example68.component.ts</div>
->>>>>>> dc0f921746cccc4c6f283906390c42f75b534ae6
         </div>
         <div accordion-content>
           <app-example68></app-example68>
         </div>
       </app-accordion-item>
-<<<<<<< HEAD
-=======
       <app-accordion-item>
         <div accordion-title>
           <div class="header">QUESTION 76<span class="triangle"></span></div>
@@ -1135,7 +1119,6 @@ constructed?
           <app-example72></app-example72>
         </div>
       </app-accordion-item>
->>>>>>> dc0f921746cccc4c6f283906390c42f75b534ae6
     </app-accordion>
   `,
   styles: [
