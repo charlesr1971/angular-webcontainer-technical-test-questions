@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { timer } from 'rxjs';
+import { Subscription, timer } from 'rxjs';
 
 @Component({
   selector: 'app-example12',
@@ -15,5 +15,7 @@ import { timer } from 'rxjs';
   `,
 })
 export class Example12Component {
+
   timer$ = timer(0, 1000);
+  
 }
