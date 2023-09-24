@@ -95,6 +95,8 @@ import { Example69Component } from './example69/example69.component';
 import { Example70Component } from './example70/example70.component';
 import { Example71Component } from './example71/example71.component';
 import { Example72Component } from './example72/example72.component';
+import { Example73Component } from './example73/example73.component';
+import { Example74Component } from './example74/example74.component';
 
 @NgModule({
   declarations: [
@@ -189,6 +191,8 @@ import { Example72Component } from './example72/example72.component';
     Example70Component,
     Example71Component,
     Example72Component,
+    Example73Component,
+    Example74Component,
   ],
   imports: [
     BrowserModule,

@@ -1119,6 +1119,32 @@ constructed?
           <app-example72></app-example72>
         </div>
       </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 80<span class="triangle"></span></div>
+          <div class="question-header">
+            What is the <em>pseudo class</em> selector that can be used to target the styles, in the element, that hosts a component?
+          </div>
+          <div class="sub-header">Example73Component</div>
+          <div class="file-header">example73.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example73></app-example73>
+        </div>
+      </app-accordion-item>
+      <app-accordion-item>
+        <div accordion-title>
+          <div class="header">QUESTION 81<span class="triangle"></span></div>
+          <div class="question-header">
+            What is the type returned by an <em>HttpClient.get()</em> method? 
+          </div>
+          <div class="sub-header">Example74Component</div>
+          <div class="file-header">example74.component.ts</div>
+        </div>
+        <div accordion-content>
+          <app-example74></app-example74>
+        </div>
+      </app-accordion-item>
     </app-accordion>
   `,
   styles: [
