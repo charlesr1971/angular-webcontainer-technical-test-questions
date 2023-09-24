@@ -1015,6 +1015,7 @@ import { DemoService } from "./services/demo.service";
 the <em>Observer</em> interface?
           </div>
           <div class="sub-header">Example65Component</div>
+
           <div class="file-header">example65.component.ts</div>
         </div>
         <div accordion-content>
@@ -1057,6 +1058,7 @@ Select the case that will be rendered by the <em>NgSwitch</em> statement?
 constructed?
           </div>
           <div class="sub-header">Example68Component</div>
+          <div class="file-header">example68component.ts</div>
           <div class="file-header">example68.component.ts</div>
         </div>
         <div accordion-content>
