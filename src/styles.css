@@ -20,6 +20,7 @@
   /* --question-header-background: rgba(250, 128, 114, 1); */
   --question-header-background: rgba(114, 218, 250, 1);
   --item-implementation-background: rgba(255, 228, 196, 0.075);
+  --item-notes-background: rgba(255, 255, 255, 0.25);
   --header-indicator-background: rgba(255, 0, 0, 1);
   --item-content-background: rgba(255, 228, 196, 1);
   --item-content-border: var(--item-content-background);
@@ -259,7 +260,7 @@ div.item-header-1 {
   border: 2px solid var(--item-content-border);
 }
 
-.code-txt {
+.code-txt, .notes-code-txt {
   padding: 15px;
   border-radius: 5px;
   background: var(--item-implementation-background);
@@ -268,6 +269,10 @@ div.item-header-1 {
 
 .code-txt:first-child {
   margin: 0px;
+}
+
+.notes-code-txt {
+  background: var(--item-notes-background);
 }
 
 .item-header-3 {
