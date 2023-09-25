@@ -1,0 +1,20 @@
+<h1>Angular Technical Test Questions</h1>
+<app-accordion>
+    <app-accordion-item *ngFor="let item of componentMetaData; let i = index">
+        <div accordion-title>
+            <div class="header">QUESTION {{ i + 1 }}<span class="triangle"></span></div>
+            <div class="question-header" [innerHTML]="item.question"></div>
+            <div class="sub-header">Example{{ item.componentOrdinal }}Component</div>
+            <div class="file-header">example{{ item.componentOrdinal }}.component.ts</div>
+        </div>
+        <div accordion-content>
+            <nav *ngIf="!!item?.routerLinks">
+                <a *ngFor="let link of item?.routerLinks; let ii = index"  [routerLink]="[link?.routerLink]" class="nav" routerLinkActive="active">{{ link?.text }}</a>
+            </nav>
+            <div [id]="'Example' + item.componentOrdinal + 'Component'" #childComponents></div>
+            <ng-container *ngIf="item?.hasRouterOutlet">
+                <router-outlet></router-outlet>
+            </ng-container>
+        </div>
+    </app-accordion-item>
+</app-accordion>
