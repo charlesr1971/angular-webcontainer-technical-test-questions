@@ -2,6 +2,7 @@
 <app-accordion>
     <app-accordion-item *ngFor="let item of componentMetaData; let i = index">
         <div accordion-title>
+            <h1 class="categories" *ngIf="item?.addCategoryHeader">{{item.category }}</h1>
             <div class="header">QUESTION {{ i + 1 }}<span class="triangle"></span></div>
             <div class="question-header" [innerHTML]="item.question"></div>
             <div class="sub-header">Example{{ item.componentOrdinal }}Component</div>
