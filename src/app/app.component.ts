@@ -40,14 +40,51 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.user = undefined;
+    componentCategories.sort();
     this.componentMetaData.map( (item) => {
       item.hasRouterOutlet = item?.hasRouterOutlet || false;
       item.outletName = item?.outletName || '';
       this.componentObjMap[item.componentName] = item.componentName;
       this.selectorObjMap[item.componentName] = item.selector;
     });
+    const categoryObj: any = {};
+    componentCategories.map( (category) => {
+      categoryObj[category] = [];
+    });
+    let temp: any = [];
+    componentCategories.map( (category) => {
+      categoryObj[category] = this.componentMetaData.filter( (item) => {
+        return item.category === category;
+      });
+      this.sortByFlag(categoryObj[category], 'addCategoryHeader');
+      temp = [...temp, ...categoryObj[category]];
+    });
+    this.componentMetaData = temp;
     console.log("AppComponent: ngOnInit(): this.componentMetaData: ", this.componentMetaData);
   }
+
+  sortByFlag(arr: any, flag = '', type = 'boolean') {
+    arr.sort(function (a: any, b: any) {
+      if(type === 'boolean'){
+        // true values first
+        return (a[flag] === b[flag]) ? 0 : a ? -1 : 1;
+        // false values first
+        // return (a === b)? 0 : a ? 1 : -1;
+      }
+      else{
+        const nameA = a.flag.toUpperCase(); // ignore upper and lowercase
+        const nameB = b.flag.toUpperCase(); // ignore upper and lowercase
+        if (nameA > nameB) {
+          return -1;
+        }
+        if (nameA < nameB) {
+          return 1;
+        }
+        // names must be equal
+        return 0;
+      }
+    });
+ };
 
   createComponent() {
     setTimeout( () => {

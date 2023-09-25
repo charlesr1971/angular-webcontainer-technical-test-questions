@@ -68,6 +68,10 @@ h1 {
   margin: 30px 15px 40px 15px;
 }
 
+h1.categories {
+  margin: 30px 15px 40px 0px;
+}
+
 .header {
   font-size: 32px;
   color: var(--header-color);
