@@ -3,7 +3,7 @@ import { LocationStrategy, PathLocationStrategy } from "@angular/common";
 import { Routes, RouterModule } from "@angular/router";
 import { Example17aComponent } from "./example17/example17a.component";
 import { Example17bComponent } from "./example17/example17b.component";
-import { Example47Component } from "./example47/example47.component";
+// import { Example47Component } from "./example47/example47.component";
 
 const routes: Routes = [
   {
@@ -36,10 +36,9 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    // RouterModule.forRoot(routes)
-    RouterModule.forRoot(routes, { useHash: true }),
+    RouterModule.forRoot(routes),
   ],
   exports: [RouterModule],
-  // providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy }],
+  providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy }],
 })
 export class AppRoutingModule {}
