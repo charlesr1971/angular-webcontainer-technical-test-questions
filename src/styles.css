@@ -51,6 +51,14 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .active {
   color: red;
 }
@@ -68,8 +76,14 @@ h1 {
   margin: 30px 15px 40px 15px;
 }
 
-h1.categories {
-  margin: 30px 15px 40px 0px;
+h2.categories {
+  margin: 30px 15px 40px 13px;
+  padding: 15px;
+  border-radius: 5px;
+  background: cadetblue;
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 .header {
