@@ -1,7 +1,16 @@
+.accordion-category-header {
+  cursor: pointer;
+}
+
 .accordion-header {
+  /* display: none; */
   padding: 10px;
   /* background-color: #f5f5f5; */
   cursor: pointer;
+}
+
+.accordion-header.open {
+  display: block;
 }
 
 .accordion-content {

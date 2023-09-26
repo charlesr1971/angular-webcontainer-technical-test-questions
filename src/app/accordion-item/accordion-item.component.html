@@ -1,6 +1,9 @@
-<div class="accordion-header" (click)="toggle()">
+<div class="accordion-category-header">
+  <ng-content select="[accordion-category-title]"></ng-content>
+</div>
+<div class="accordion-header hide" (click)="toggle()">
   <ng-content select="[accordion-title]"></ng-content>
 </div>
-<div class="accordion-content" [ngClass]="{ open: isOpen }">
+<div class="accordion-content hide" [ngClass]="{ open: isOpen }">
   <ng-content select="[accordion-content]"></ng-content>
 </div>

@@ -1,4 +1,4 @@
-export const componentCategories = ['Form','@Input/@Output','Template','Pipes','Change Detection Strategy','Router','NgModule','Operators','Components & Services','Directives','Lifecycle Hooks','HttpInterceptor','CSS','Decorators','RxJs','@ViewChild','Types','Singleton'];
+export const componentCategories = ['Forms','@Input/@Output','Template','Pipes','Change Detection Strategy','Router','NgModule','Operators','Components & Services','Directives','Lifecycle Hooks','HttpInterceptor','CSS','Decorators','RxJs','@ViewChild','Types','Singleton'];
 
 export const metaData = [
 	{
@@ -6,7 +6,7 @@ export const metaData = [
 		componentName: 'Example2Component',
 		question: 'Given the code snippet below.<br />What is the name of the <em>html element</em> that should replace the question mark, from the <em>component template</em>?',
 		componentOrdinal: '2',
-		category: 'Form',
+		category: 'Forms',
 		addCategoryHeader: true,
 		hasConflict: false
 	},
@@ -265,7 +265,7 @@ export const metaData = [
 		question: 'Which of the following is an incorrect syntax for adding the <em>valid</em> CSS class to an html element?',
 		componentOrdinal: '32',
 		category: 'CSS',
-		addCategoryHeader: false,
+		addCategoryHeader: true,
 		hasConflict: false
 	},
 	{
