@@ -16,4 +16,6 @@ export interface MetDataItem {
     routerLinks?: _RouterLink[];
     hasRouterOutlet?: boolean;
     outletName?: string;
+    categoryClass?: string;
+    isOpen?: boolean;
 }

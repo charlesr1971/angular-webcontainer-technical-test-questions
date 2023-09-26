@@ -1,14 +1,17 @@
 <h1>Angular Technical Test Questions</h1>
 <app-accordion>
-    <app-accordion-item *ngFor="let item of componentMetaData; let i = index">
-        <div accordion-title>
-            <h1 class="categories" *ngIf="item?.addCategoryHeader">{{item.category }}</h1>
-            <div class="header">QUESTION {{ i + 1 }}<span class="triangle"></span></div>
+    <app-accordion-item *ngFor="let item of componentMetaData; let i = index" [isOpen]="!!item.isOpen" [componentName]="item.componentName" (item)="itemSelected($event)">
+        <!-- <div accordion-category-title (click)="toggleCategory('' + item.categoryClass + '')"> -->
+        <div accordion-category-title (click)="toggleCategory(item)">
+            <h2 class="categories" *ngIf="item?.addCategoryHeader">{{ item.category }}</h2>
+        </div>
+        <div accordion-title class="{{ item.categoryClass }}">
+            <div [ngClass]="item?.hasConflict ? 'header header-conflict' : 'header'">QUESTION {{ i + 1 }}<span class="triangle"></span></div>
             <div class="question-header" [innerHTML]="item.question"></div>
             <div class="sub-header">Example{{ item.componentOrdinal }}Component</div>
             <div class="file-header">example{{ item.componentOrdinal }}.component.ts</div>
         </div>
-        <div accordion-content>
+        <div accordion-content class="{{ item.categoryClass }}">
             <nav *ngIf="!!item?.routerLinks">
                 <a *ngFor="let link of item?.routerLinks; let ii = index"  [routerLink]="[link?.routerLink]" class="nav" routerLinkActive="active">{{ link?.text }}</a>
             </nav>
