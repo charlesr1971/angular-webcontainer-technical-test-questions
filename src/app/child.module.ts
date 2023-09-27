@@ -89,6 +89,7 @@ import { Example71Component } from './example71/example71.component';
 import { Example72Component } from './example72/example72.component';
 import { Example73Component } from './example73/example73.component';
 import { Example74Component } from './example74/example74.component';
+import { Example75Component } from './example75/example75.component';
 
 @NgModule({
     imports: [
@@ -186,6 +187,7 @@ import { Example74Component } from './example74/example74.component';
         Example72Component,
         Example73Component,
         Example74Component,
+        Example75Component,
     ]
 })
 export class ChildModule extends BaseModule {
@@ -273,6 +275,7 @@ export class ChildModule extends BaseModule {
     Example72Component,
     Example73Component,
     Example74Component,
+    Example75Component,
   ];
 
   constructor(componentFactoryResolver: ComponentFactoryResolver) {
