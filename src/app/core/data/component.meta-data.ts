@@ -653,4 +653,13 @@ export const metaData = [
 		addCategoryHeader: false,
 		hasConflict: false
 	},
+	{
+		selector: 'app-example75',
+		componentName: 'Example75Component',
+		question: 'An angular app allows a single <em>Httplnterceptor</em> instance, through which all http requests and responses, flow?',
+		componentOrdinal: '75',
+		category: 'HttpInterceptor',
+		addCategoryHeader: false,
+		hasConflict: false
+	},
 ];
