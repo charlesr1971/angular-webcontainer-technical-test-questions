@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
     <div class="item-header-3">Answer</div>
     <div class="item-content item-text">navigation 2</div>
     <div class="item-header-4">Notes</div>
-    <div class="item-content item-text"><a href="https://stackoverflow.com/questions/45902521/routing-with-id-in-angular-4/50393304#50393304" target="_blank">More Information</a><br /><a href="https://angular.io/guide/router#accessing-query-parameters-and-fragments" target="_blank">Accessing query parameters and fragments</a></div>
+    <div class="item-content item-text"><a href="https://stackoverflow.com/questions/45902521/routing-with-id-in-angular-4/50393304#50393304" target="_blank">More Information</a><br /><a href="https://angular.io/guide/router#accessing-query-parameters-and-fragments" target="_blank">Accessing query parameters and fragments</a><br /><a href="https://angular.io/generated/live-examples/router/stackblitz.html" target="_blank">Click here and then search for <em>this.router.navigate(</em></a></div>
   `,
   styles: [],
 })
