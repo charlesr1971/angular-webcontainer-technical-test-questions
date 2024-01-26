@@ -89,7 +89,7 @@ export const metaData = [
 		componentOrdinal: '10',
 		category: 'Template',
 		addCategoryHeader: false,
-		hasConflict: true
+		hasConflict: false
 	},
 	{
 		selector: 'app-example15',
@@ -489,7 +489,7 @@ export const metaData = [
 		componentOrdinal: '55a',
 		category: '@ViewChild',
 		addCategoryHeader: true,
-		hasConflict: true
+		hasConflict: false
 	},
 	{
 		selector: 'app-example56',

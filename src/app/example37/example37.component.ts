@@ -39,17 +39,24 @@ interface Weather {
   styles: [],
 })
 export class Example37Component implements OnInit {
-  restApiUrl =
-    "https://community.establishmindfulness.com/assets/cfm/rest/api/v1";
+
+  protocol = window.location.protocol.replace(":", "");
+  usesSsl = this.protocol === "https" ? true : false;
+
+  restApiUrl = this.usesSsl ? "https://community.establishmindfulness.com/assets/cfm/rest/api/v1" : "http://localhost:8500/community.establishmindfulness/material/ngMat02/src/assets/cfm/rest/api/v1";
+
+  endpoint = 'https://api.openweathermap.org/data/2.5/forecast?cnt=1&q=';
+  apiKey = 'aee8982df68e487a7878e769e4e4ec08';
+
   subscription1: Subscription;
   subscription2: Subscription;
   subscription3: Subscription;
   subscription4: Subscription;
 
-  code = `const headers = new HttpHeaders( { 'Authorization' : this.token } ); 
-// answer 1 
-this.httpClient.get(this.configUrl, headers); 
-// answer 3 
+  code = `const headers = new HttpHeaders( { 'Authorization' : this.token } );
+// answer 1
+this.httpClient.get(this.configUrl, headers);
+// answer 3
 this.httpClient.get(this.configUrl, new HttpHeaders( { 'Authorization ': this.token } ) );`;
 
   constructor(private httpClient: HttpClient) {}
@@ -96,20 +103,51 @@ this.httpClient.get(this.configUrl, new HttpHeaders( { 'Authorization ': this.to
     return this.httpClient.get(this.restApiUrl + "/search/" + page, headers );
   } */
 
-  readData2(term: string = "", page: number = 1): Observable<any> {
+  /* readData2(term: string = "", page: number = 1): Observable<any> {
     const headers = new HttpHeaders({ term: term || "" });
     return this.httpClient.get(this.restApiUrl + "/search/" + page, {
       headers,
     });
-  }
+  } */
 
   /* readData3(term: string = "", page: number = 1): Observable<any> {
     return this.httpClient.get(this.restApiUrl + "/search/" + page, new HttpHeaders({ term: term || "" }));
   } */
 
-  readData4(term: string = "", page: number = 1): Observable<any> {
+  /* readData4(term: string = "", page: number = 1): Observable<any> {
     return this.httpClient.get(this.restApiUrl + "/search/" + page, {
       headers: new HttpHeaders({ term: term || "" }),
     });
+  } */
+
+
+  /* readData1(term: string = "", page: number = 1): Observable<any> {
+    const apiUrl = `${this.endpoint}${term}&appid=${this.apiKey}`;
+    const headers = new HttpHeaders({ term: term || "" });
+    return this.httpClient.get(apiUrl, headers );
+  } */
+
+  readData2(term: string = "", page: number = 1): Observable<any> {
+    const location = 'London,uk';
+    const apiUrl = `${this.endpoint}${location}&appid=${this.apiKey}`;
+    const headers = new HttpHeaders({ term: term || "" });
+    /* return this.httpClient.get(apiUrl, {
+      headers,
+    }); */
+    return this.httpClient.get(apiUrl);
+  }
+
+  /* readData3(term: string = "", page: number = 1): Observable<any> {
+    const apiUrl = `${this.endpoint}${term}&appid=${this.apiKey}`;
+    return this.httpClient.get(apiUrl, new HttpHeaders({ term: term || "" }));
+  } */
+
+  readData4(term: string = "", page: number = 1): Observable<any> {
+    const location = 'London,uk';
+    const apiUrl = `${this.endpoint}${location}&appid=${this.apiKey}`;
+    /* return this.httpClient.get(apiUrl, {
+      headers: new HttpHeaders({ term: term || "" }),
+    }); */
+    return this.httpClient.get(apiUrl);
   }
 }
