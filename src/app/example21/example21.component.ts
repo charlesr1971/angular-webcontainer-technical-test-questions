@@ -72,7 +72,7 @@ export class Example21Component implements OnInit, OnDestroy {
 
   timer$: Observable<number>;
 
-  startValue = 0;
+  startValue = 5;
 
   hours: any = "00";
   minutes: any = "00";
@@ -98,15 +98,22 @@ export class Example21Component implements OnInit, OnDestroy {
       "click",
     ).pipe(mapTo("RESET"));
 
+    this.convertTime(this.startValue);
+
     this.createTimer(merge(start$, stop$, reset$)).subscribe((seconds) => {
       console.log("Example21Component: ngOnInit(): timer subscribe");
-      const secondsFieldVal = seconds % 60;
-      const minutesFieldVal = Math.floor(seconds / 60) % 60;
-      const hoursFieldVal = Math.floor(seconds / 3600);
-      this.hours = hoursFieldVal;
-      this.minutes = minutesFieldVal;
-      this.seconds = secondsFieldVal;
+      this.convertTime(seconds);
     });
+  }
+
+
+  convertTime(seconds: number): void {
+    const secondsFieldVal = seconds % 60;
+    const minutesFieldVal = Math.floor(seconds / 60) % 60;
+    const hoursFieldVal = Math.floor(seconds / 3600);
+    this.hours = hoursFieldVal;
+    this.minutes = minutesFieldVal;
+    this.seconds = secondsFieldVal;
   }
 
   createTimer(
@@ -116,11 +123,22 @@ export class Example21Component implements OnInit, OnDestroy {
     return defer(() => {
       let toggle: boolean = false;
       let count: number = 0;
-      this.timer$ = timer(0, interval).pipe(map((x) => count++));
+      this.timer$ = timer(0, interval).pipe(map((x) => {
+        const c = count++;
+        const total = this.startValue - c;
+        console.log("Example21Component: createTimer(): count 1: ", count);
+        if ((total + 1) === 0) {
+          console.log("Example21Component: createTimer(): total: ", total);
+          this.stopBtn.nativeElement.click();
+          this.resetBtn.nativeElement.click();
+        }
+        return total;
+      }));
       const end$ = of("END");
       return concat(control$, end$).pipe(
         catchError((_) => end$),
         switchMap((control) => {
+          console.log("Example21Component: createTimer(): count 3: ", count);
           if (control === "START" && !toggle) {
             toggle = true;
             return this.timer$;
