@@ -11,7 +11,7 @@ import { Example55bComponent } from "./example55b.component";
       <app-example55b name="Demo"></app-example55b>
     </div>
     <div class="item-header-3">Answer</div>
-    <div class="item-content item-text">Demo2</div>
+    <div class="item-content item-text">Nothing, since the child is not yet defined by the time the console.log calls are executed</div>
     <div class="item-header-4">Notes</div>
     <div class="item-content item-text">
       In order to get <em>@ViewChild</em> property initiated, you need to call
@@ -20,8 +20,6 @@ import { Example55bComponent } from "./example55b.component";
         >More information</a
       >
     </div>
-    <div class="item-header-5">Conflict</div>
-    <div class="item-content item-text">The correct answer is not shown</div>
   `,
   styles: [],
 })

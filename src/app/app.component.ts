@@ -155,7 +155,8 @@ export class AppComponent implements OnInit {
   createComponent() {
     setTimeout( () => {
       this.childComponents.map( (container: any) => {
-        const componentName = this.componentObjMap[container._lContainer[0].id];
+        // const componentName = this.componentObjMap[container._lContainer[0].id];
+        const componentName = this.componentObjMap[container.element.nativeElement.id];
         const viewContainerRef: ViewContainerRef = container;
         const selector = this.selectorObjMap[componentName];
         this.componentService
